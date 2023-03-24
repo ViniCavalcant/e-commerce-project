@@ -1,0 +1,20 @@
+{
+    "slider":[
+        {
+            "image": "assets/slider/slider0.jpg",
+            "text": "teste slider"
+        },
+        {
+            "image": "assets/slider/slider1.jpg",
+            "text": "teste slider"
+        },
+        {
+            "image": "assets/slider/slider2.jpg",
+            "text": "teste slider"
+        },
+        {
+            "image": "assets/slider/slider3.jpg",
+            "text": "teste slider"
+        }
+    ]
+}
