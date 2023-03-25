@@ -176,16 +176,14 @@ h4 {
 .order-by{
 	background: var(--light-bg-color);
 	width: 120px;
-	height: 30px;
 	border: 0 solid var(--light-bg-color);
-	border-radius: 50px;
 
 	margin-right: 8px;
 	border-color: var(--light-bg-color);
 }
 
 /* cards */
-.card{
+.card-product{
 	height: 480px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -1,0 +1,21 @@
+/* card do produto */
+.cart-product{
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.image-container{
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+} 
+
+.card-info{
+    color: var(--secondary-dark-color);
+}
+
+.card-amount{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

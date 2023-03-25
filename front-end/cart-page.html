@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itsStore</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cart-style.css">
+</head>
+
+<body>
+    <header class="container-xxl container-xl container py-3">
+        <div class="row">
+            <div class="col-8">
+                <ul class="nav justify-content-start align-items-center">
+                    <div class="d-flex">
+                        <li class="nav-item logo">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img src="./assets/logo/itsPay.png" alt="Logo" width="48" height="48"
+                                    class="d-inline-block align-text-top">
+                                itsPay
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <ul class="nav">
+                    <li class="nav-item d-flex justify-content-center align-items-center">
+                        <a class="nav-link main-links" href="#">
+                            <i class="bi bi-cart-fill large-icon"></i>
+                        </a>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                        <span class="w-50">Total R$150,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-xxl container-xl container pt-3">
+        <!-- row row-cols-2 row-cols-md-3 row-cols-lg-4 h-sm-50 g-4 -->
+        <h2 class="py-3">Carrinho de produtos</h2>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="row cart-product">
+                    <div class="col-2">
+                        <img class="image-container overflow-hidden" src="./assets/products/apparel1.jpg" alt="...">                            
+                    </div>
+                    <div class="col-10">
+                        <div class="row row-cols-md">
+                            <div class="col-5">
+                                <h3>Casaco masculino preto</h3>
+                                <h4>Preto | G</h4>
+                                <div class="pt-2">
+                                    <i class="bi bi-trash3 large-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <h3>Preço</h3>
+                                <h4>R$ 00,00</h4>
+                            </div>
+
+                            <div class="col-3">
+                                <h3 class="d-flex justify-content-center">Quantidade</h3>
+                                <h4 class="d-flex justify-content-center">0</h4>
+                            </div>
+
+                            <div class="col-2">
+                                <h3>Total</h3>
+                                <h4>R$ 00,00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card card-amount">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center pb-3">
+                            <h3 class="card-title text-light-emphasis">Total</h3>
+                            <h2 class="card-title">R$ 00,00</h2>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pb-3">
+                            <h3 class="card-title text-light-emphasis">Desconto</h3>
+                            <h2 class="card-title">R$ 00,00</h2>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title text-light-emphasis">Entrega</h3>
+                            <h2 class="card-title">R$ 00,00</h2>
+                        </div>
+
+                        <hr class="border-1">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="card-title text-light-emphasis">Valor total</h3>
+                            <h2 class="card-title">R$ 00,00</h2>
+                        </div>
+
+                        <div class="d-grid gap-2 pt-3">
+                            <button class="btn btn-primary" type="button">Finalizar compra</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="container-xxl container-xl pt-3">
+        <h1>footer</h1>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
+
+                <!-- <div class="cart-product card mb-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./assets/products/apparel1.jpg" class="img-fluid rounded-start cart-image" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-8">
+                                <h3>Casaco masculino preto</h2>
+                                <h2 class="card-text pt-1">Por <span class="card-price">R$ 89,99</span></h1>
+                                <h3><span class="card-info">Preto</span> | <span class="card-info">G</span></h3>
+                                <div class="stepper-input">
+                                    <button id="decrement" class="decrement" onclick="stepper(this)">-</button>
+                                    <input type="number" class="stepper-number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+                                    <button id="increment" class="increment" onclick="stepper(this)">+</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                teste
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> -->

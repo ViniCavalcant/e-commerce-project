@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itsStore</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/product-style.css">
+</head>
+
+<body>
+    <header class="container-xxl container-xl container py-3">
+        <div class="row">
+            <div class="col-8">
+                <ul class="nav justify-content-start align-items-center">
+                    <div class="d-flex">
+                        <li class="nav-item logo">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img src="./assets/logo/itsPay.png" alt="Logo" width="48" height="48"
+                                    class="d-inline-block align-text-top">
+                                itsPay
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+                <ul class="nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link main-links" href="#"><i class="bi bi-heart-fill"></i></a>
+                    </li> -->
+                    <li class="nav-item d-flex justify-content-center align-items-center">
+                        <a class="nav-link main-links" href="#">
+                            <i class="bi bi-cart-fill large-icon"></i>
+                        </a>
+                        <span class="badge bg-primary rounded-pill">14</span>
+                        <span class="w-50">Total R$150,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-xxl container-xl">
+
+            <div class="row row-cols-1 row-cols-sm-2">
+
+                <div class="col slider-content">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/products/apparel1.jpg" class="d-block w-100 slider-height overflow-hidden" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/products/apparel1.jpg" class="d-block w-100 slider-height overflow-hidden" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/products/apparel1.jpg" class="d-block w-100 slider-height overflow-hidden" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col pt-3">
+                    <h2>Casaco masculino preto</h2>
+                    <h1 class="card-text pt-1">Por <span class="card-price">R$ 89,99</span></h1>
+                    <h3 class="pt-3">Jaqueta masculina, confeccionada em tecido plano poliéster. Possui fehamento por zíper, bolsos, acabamento e costura no tom.</h3>                    
+                    
+                    <div class="row row-cols-2 row-cols-lg-1 h-sm-50">
+                        <div class="pt-4">
+                            <h3>Cor</h3>
+                            <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
+                                <option class="color-option" value="1">Azul</option>
+                                <option class="color-option" value="2">Amarelo</option>
+                                <option class="color-option" value="3">Branco</option>
+                                <option class="color-option" value="4">Preto</option>
+                                <option class="color-option" value="5">Vermelho</option>
+                            </select>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <h3>Tamanho</h3>
+                            <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
+                                <option value="1">PP</option>
+                                <option value="2">P</option>
+                                <option value="2">G</option>
+                                <option value="2">GG</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="pt-3 w-100">
+                            <h3>Forma de pagamento</h3>
+                            <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
+                                <option value="1">Crédito</option>
+                                <option value="2">Débito</option>
+                                <option value="2">Pix</option>
+                            </select>
+                        </div> -->
+                    </div>
+                                            
+                    <div class="pt-4">
+                        <h3>Quantidade</h3>
+                        <div class="stepper-input">
+                            <button id="decrement" class="decrement" onclick="stepper(this)">-</button>
+                            <input type="number" class="stepper-number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+                            <button id="increment" class="increment" onclick="stepper(this)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 pt-5">
+                        <button class="btn btn-primary w-50" type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="pt-5">
+                <h2>Produtos recomendados</h2>
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 h-sm-50 g-4 pt-3">
+                    <div class="col">
+                        <div class="card card-product">
+                            <img src="./assets/products/apparel1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Casaco masculino preto</h4>
+                                <h5 class="card-text">Por <span class="card-price">R$ 89,99</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <img src="./assets/products/apparel1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Casaco masculino preto</h4>
+                                <h5 class="card-text">Por <span class="card-price">R$ 89,99</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <img src="./assets/products/apparel1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Casaco masculino preto</h4>
+                                <h5 class="card-text">Por <span class="card-price">R$ 89,99</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-product">
+                            <img src="./assets/products/apparel1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Casaco masculino preto</h4>
+                                <h5 class="card-text">Por <span class="card-price">R$ 89,99</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+
+    <footer class="container-xxl container-xl pt-3">
+        <h1>aaaaaaaaaaaaaaaaaaaa</h1>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
