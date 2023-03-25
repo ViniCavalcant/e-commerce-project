@@ -1,19 +1,251 @@
-// const slider = 
-//     [
-//         {image: 'slider0.jpg', text: 'teste slider'},
-//         {image: 'slider1.jpg', text: 'teste slider'},
-//         {image: 'slider2.jpg', text: 'teste slider'},
-//         {image: 'slider3.jpg', text: 'teste slider'},
-//     ]
+// add to cart (adiciona numero de produtos no carrinho)
+let cards = document.querySelectorAll('.add-cart');
 
-// for(i = 0; i < slider.length; i++){
-//     let minhaImagem = { 
-//         url: "assets/slider/" + slider[i].image,
-//     };
+products = [
+    {
+        id: "casacomasculinopreto",
+        name: 'Casaco masculino preto',
+        tag: 'casacomasculinopreto',
+        image: './assets/products/apparel1.jpg',
+        price: 89,
+        inCart: 0,
+        size: 'P',
+        color: 'Preto'
+    },
+    {
+        id: "blusafemininamarrom",
+        name: 'Blusa Feminina marrom',
+        tag: 'blusafemininamarrom',
+        image: './assets/products/apparel2.jpg',
+        price: 89,
+        inCart: 0,
+        size: 'P',
+        color: 'Preto'
+    },
+    {
+        id: "sobretudofemininopreto",
+        name: 'Sobretudo Feminino preto',
+        tag: 'sobretudofemininopreto',
+        image: './assets/products/apparel3.jpg',
+        price: 89,
+        inCart: 0,
+        size: 'P',
+        color: 'Preto'
+    },
+    {
+        id: "vestidofemininocinza",
+        name: 'Vestido Feminino cinza',
+        tag: 'vestidofemininocinza',
+        image: './assets/products/apparel4.jpg',
+        price: 89,
+        inCart: 0,
+        size: 'P',
+        color: 'Preto'
+    }
+]
+
+for (let i = 0; i < cards.length; i++){
+    cards[i].addEventListener('click', () => {
+        cartNumbers(products[i]);
+        totalCost(products[i]);
+    })
+}
+
+function onLoadCartNumbers(){
+    let productNumbers = localStorage.getItem('cartNumbers');
+    if(productNumbers) {
+        document.querySelector('.badge').textContent = productNumbers;
+    }
+}
+
+function cartNumbers(products) {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+
+    if(productNumbers){
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.badge').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.badge').textContent = 1;
+    }
+
+    setItens(products);
+}
+
+function setItens(product){
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if(cartItems != null){
+        if(cartItems[product.tag] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+
+        cartItems[product.tag].inCart += 1;
+    } else {
+        product.inCart = 1;
+        cartItems  = {
+            [product.tag]: product
+        }
+    }
+
+    localStorage.setItem("productsInCart", JSON.stringify (cartItems));
+}
+
+function totalCost(product){
+    let cartCost = localStorage.getItem('totalCost');
+
+    if(cartCost != null){
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price);
+    } else {
+        localStorage.setItem("totalCost", product.price);
+    }
+}
+
+function displayCart(){
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector(".product-container")
+    let cartCost = localStorage.getItem('totalCost');
     
-//     let imagemParaExibir = minhaImagem;
-//     document.getElementById("minha-imagem").src = imagemParaExibir.url;
-// }
+    if(cartItems && productContainer){
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item =>{
+            productContainer.innerHTML += `
+            <div class="col-12 pt-3 pt-lg-0">
+                <div class="cart-product product-container">
+                    <div class="row pb-3">
+                        <div class="col-2">
+                            <a href="product-page.html">
+                                <img class="image-container overflow-hidden" src="${item.image}" alt="...">                            
+                            </a>
+                        </div>
+                        <div class="col-10">
+                            <div class="row row-cols-md">
+                                <div class="col-5">
+                                    <h3>${item.name}</h3>
+                                    <h4>${item.color} | ${item.size}</h4>
+                                    <div class="pt-2">
+                                        <a href="#">
+                                            <div class="trash-click">
+                                                <i class="bi bi-trash3 large-icon"></i>
+                                                <h3 class="d-none">${item.name}</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <h3>Preço</h3>
+                                    <h4>R$ ${item.price}</h4>
+                                </div>
+
+                                <div class="col-3">
+                                    <h3 class="d-flex justify-content-center">Quantidade</h3>
+                                    <h4 class="d-flex justify-content-center">${item.inCart}</h4>
+                                </div>
+
+                                <div class="col-2">
+                                    <h3>Total</h3>
+                                    <h4>R$ ${item.inCart * item.price}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        });
+
+        productContainer.innerHTML += `
+        <div class="col-4 pb-3">
+            <div class="card card-amount">
+                <div class="card-body cart-price">
+                    <div class="d-flex justify-content-between align-items-center pb-3">
+                        <h3 class="card-title text-light-emphasis">Total</h3>
+                        <h3 class="card-title">R$ ${cartCost}</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center pb-3">
+                        <h3 class="card-title text-light-emphasis">Desconto</h3>
+                        <h3 class="card-title">R$ 0,00</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="card-title text-light-emphasis">Entrega</h3>
+                        <h3 class="card-title">R$ 0,00</h3>
+                    </div>
+
+                    <hr class="border-1">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="card-title text-light-emphasis">Valor total</h3>
+                        <h2 class="card-title">R$ ${cartCost}</h2>
+                    </div>
+                    
+                    <div class="d-grid gap-2 pt-3">
+                        <button class="btn btn-primary" type="button">Finalizar compra</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        `
+    }
+    deleteButtons();
+}
+
+function deleteButtons() {
+    let deleteButtons = document.querySelectorAll('.trash-click');
+    let productName;
+    let productNumbers = localStorage.getItem('cartNumbers');
+    let cartItems = localStorage.getItem('productsInCart');
+    let cartCost = localStorage.getItem('totalCost');
+    
+    cartItems = JSON.parse(cartItems);
+
+    for(let i=0; i < deleteButtons.length; i++) {
+        deleteButtons[i].addEventListener('click', () => {
+            productName = deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
+
+            localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
+            
+            localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+
+            delete cartItems[productName];
+
+            localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+
+            displayCart();
+            onLoadCartNumbers();
+        });
+    }
+}
+
+onLoadCartNumbers();
+displayCart();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Stepper (contador de produtos)
 const myInput = document.getElementById("my-input");
