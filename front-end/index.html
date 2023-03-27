@@ -92,7 +92,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- carousel -->
+
         <div class="py-3">
             <h2>Produtos em destaque</h2>
         </div>
@@ -101,41 +101,45 @@
             <div class="pb-1">
                 <h3>Filtrar produtos</h3>
             </div>
+
             <div class="align-items-start">
                 <div class="row">
-                    <div class="col d-flex">
+                    <div class="col d-flex justify-content-start">
+                        <div class="form-group has-search">
+                            <input id="search-item" type="text" class="form-control" placeholder="Pesquisar" onkeyup="search()">
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
                         <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
-                            <option selected>Preço</option>
-                            <option value="1">Mais alto</option>
-                            <option value="2">Mais baixo</option>
+                            <option value="none" selected>Preço</option>
+                            <option value="highest-price">Mais alto</option>
+                            <option value="highest-price">Mais baixo</option>
                         </select>
 
                         <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
-                            <option selected>Avaliações</option>
-                            <option class="color-option" value="1">Avaliados mais altas</option>
-                            <option class="color-option" value="2">Avaliados mais baixas</option>
+                            <option value="none"selected >Avaliações</option>
+                            <option value="highest-rated">Mais altas</option>
+                            <option value="lowest-rated">Mais baixas</option>
                         </select>
 
                         <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
-                            <option selected>Categoria</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Feminino</option>
+                            <option value="none" selected>Categoria</option>
+                            <option value="feminine">Masculino</option>
+                            <option value="masculine">Feminino</option>
                         </select>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 h-sm-50 g-4 cards-product">
-
+        <div class="section-products">
+            <div id="cards-product" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 h-sm-50 g-4 cards-product"></div>
         </div>
-
     </main>
 
 
     <footer class="container-xxl container-xl">
         <h1></h1>
-
     </footer>
 
 

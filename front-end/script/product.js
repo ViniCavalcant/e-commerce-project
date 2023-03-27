@@ -58,6 +58,3 @@ addToCartBtn.addEventListener('click', () => {
   // chamar a função que trata o clique do botão e passar o objeto currentProduct como parâmetro
   addToCart(currentProduct);
 });
-
-
-

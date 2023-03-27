@@ -175,7 +175,7 @@ h4 {
 
 .order-by{
 	background: var(--light-bg-color);
-	width: 120px;
+	width: 160px;
 	border: 0 solid var(--light-bg-color);
 
 	margin-right: 8px;
@@ -209,4 +209,8 @@ h4 {
 
 .add-cart{
 	cursor: pointer;
+}
+
+.product-not-found img{
+    height: 300px;
 }

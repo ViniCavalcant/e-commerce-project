@@ -4,7 +4,7 @@ function addToCart(product) {
     localStorage.setItem('product', JSON.stringify(product));
     cartNumbers(product);
     totalCost(product);
-  }
+}
 
 function onLoadCartNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
@@ -25,7 +25,6 @@ function cartNumbers(products) {
         document.querySelector('.badge').textContent = 1;
     }
 
-    console.log(productNumbers)
     setItens(products);
 }
 
@@ -198,16 +197,6 @@ function deleteButtons() {
 
 onLoadCartNumbers();
 displayCart();
-
-
-
-
-
-
-
-
-
-
 
 
 
