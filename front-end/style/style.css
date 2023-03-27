@@ -104,6 +104,11 @@ h4 {
 	font-weight: var(--fw5);
 }
 
+.title-card-display{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 /* icons */
 .small-icon{
 	font-size: 16px;
@@ -120,11 +125,6 @@ h4 {
 .badge{
 	bottom: 6px;
 }
-
-/* .bi-heart-fill:hover{
-    transition: var(--trans-color);
-    color: var(--primary-color);
-} */
 
 /* header */
 .header-position{
@@ -190,7 +190,7 @@ h4 {
 
 .card:hover{
 	transition: .5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .card-img-top{
@@ -201,4 +201,12 @@ h4 {
 
 .card-price{
 	color: var(--secondary-color);
+}
+
+.card-amount{
+	max-height: 300px;
+}
+
+.add-cart{
+	cursor: pointer;
 }

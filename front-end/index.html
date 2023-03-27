@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itsStore</title>
+    <link rel="icon" href="./assets/logo/itsPay.ico">
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -110,12 +111,12 @@
                         </select>
 
                         <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
-                            <option selected>Cor</option>
-                            <option class="color-option" value="1">Azul</option>
-                            <option class="color-option" value="2">Amarelo</option>
-                            <option class="color-option" value="3">Branco</option>
-                            <option class="color-option" value="4">Preto</option>
-                            <option class="color-option" value="5">Vermelho</option>
+                            <option selected>teste</option>
+                            <option class="color-option" value="1">te</option>
+                            <option class="color-option" value="2">tee</option>
+                            <option class="color-option" value="3">teeee</option>
+                            <option class="color-option" value="4">teee</option>
+                            <option class="color-option" value="5">teeeee</option>
                         </select>
 
                         <select class="form-select form-select order-by rounded-pill" aria-label=".form-select">
@@ -137,51 +138,8 @@
             </div>
         </div>
 
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 h-sm-50 g-4">
-            <div class="col">
-                <a href=""  class="add-cart">
-                    <div class="card card-product">
-                        <img src="./assets/products/apparel1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Casaco masculino preto</h4>
-                            <h5 class="card-text">Por <span class="card-price">R$ 65,20</span></h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="" class="add-cart">
-                    <div class="card card-product">
-                        <img src="./assets/products/apparel2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Blusa Feminina marrom</h4>
-                            <h5 class="card-text">Por <span class="card-price">R$ 50,90</span></h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="product-page.html" id="2">
-                    <div class="card card-product">
-                        <img src="./assets/products/apparel3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Sobretudo Feminino preto</h4>
-                            <h5 class="card-text">Por <span class="card-price">R$ 87,10</span></h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="product-page.html">
-                    <div class="card card-product">
-                        <img src="./assets/products/apparel4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">Vestido Feminino cinza</h4>
-                            <h5 class="card-text">Por <span class="card-price">R$ 80,39</span></h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 h-sm-50 g-4 cards-product">
+
         </div>
 
     </main>
@@ -194,7 +152,9 @@
 
 
     <!-- JavaScript -->
+    <script src="../service/service.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/cart.js"></script>
 </body>
 
 </html>
