@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function getItens(){
                 image: item.image,
                 price: item.price,
                 inCart: 0,
-                size: '',
-                color: ''
+                description: item.description,
             };
             formatedResponse.push(newItem);
         }
