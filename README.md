@@ -24,13 +24,13 @@ O primeiro será utilizando a extensão do Visual Studio Code chamada Live Serve
 
 
 Primeiro - instale a extensão no botão "install"
-![image1](https://user-images.githubusercontent.com/66746763/228156643-bd689b7f-dc03-4132-9681-f29e9952e92c.png width="120")
+![image1](https://user-images.githubusercontent.com/66746763/228156643-bd689b7f-dc03-4132-9681-f29e9952e92c.png)
 
 Segundo - vá até o arquivo "index.html" localizado na pasta front-end
-![image2](https://user-images.githubusercontent.com/66746763/228156762-9aaf27dc-92d1-4958-9df4-1841b6725928.png width="120")
+![image2](https://user-images.githubusercontent.com/66746763/228156762-9aaf27dc-92d1-4958-9df4-1841b6725928.png)
 
 Terceiro - clique em "Go Live" no canto inferior direito
-![image3](https://user-images.githubusercontent.com/66746763/228156799-cbd14c39-69eb-4e92-abc4-7cd3a54807ef.png width="120")
+![image3](https://user-images.githubusercontent.com/66746763/228156799-cbd14c39-69eb-4e92-abc4-7cd3a54807ef.png)
 
 Agora é só ir até o seu navegador, que o projeto ira estar pronto para uso. 😊
 
@@ -39,13 +39,13 @@ Já o segundo, será mais simples.
 
 
 Primeiro - vá atá a pasta do projeto em seu dispositivo
-![image4](https://user-images.githubusercontent.com/66746763/228156823-3739b0a2-04b7-4b86-abcb-44dc7dc5cf25.png width="120")
+![image4](https://user-images.githubusercontent.com/66746763/228156823-3739b0a2-04b7-4b86-abcb-44dc7dc5cf25.png)
 
 Segundo - entre nela e clique na pasta "front-end"
-![image5](https://user-images.githubusercontent.com/66746763/228156856-537d9e8b-d2c0-4353-ac47-e4b8d6b16f9f.png width="120")
+![image5](https://user-images.githubusercontent.com/66746763/228156856-537d9e8b-d2c0-4353-ac47-e4b8d6b16f9f.png)
 
 Terceiro - clique duas vezes no arquivo "index.html"
-![image6](https://user-images.githubusercontent.com/66746763/228156876-402c52d4-8c22-44bc-9989-bdec5432feeb.png width="120")
+![image6](https://user-images.githubusercontent.com/66746763/228156876-402c52d4-8c22-44bc-9989-bdec5432feeb.png)
 
 O seu navegador ira abrir no projeto pronto para uso. 😊
 
