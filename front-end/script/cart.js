@@ -148,7 +148,7 @@ function displayCart(){
             });
 
             productContainer.innerHTML += `
-                <div class="col-4 pb-3">
+                <div class="col-8 col-sm-7 col-md-5 col-lg-4 pb-3">
                     <div class="card card-amount">
                         <div class="card-body cart-price">
                             <div class="d-flex justify-content-between align-items-center pb-3">
@@ -172,7 +172,7 @@ function displayCart(){
                             </div>
                             
                             <div class="d-grid gap-2 pt-3">
-                                <button class="btn btn-primary" type="button">Finalizar compra</button>
+                                <button class="btn rounded-pill color-button" type="button">Finalizar compra</button>
                             </div>
                         </div> 
                     </div>

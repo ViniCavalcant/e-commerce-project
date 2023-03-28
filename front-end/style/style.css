@@ -26,6 +26,7 @@
 	--trans-background-color: background-color 0.3s, color 0.3s;
 	--trans-background: background-color 0.3s;
 	--trans-color: color 0.3s;
+	--trans-default: 0.5s
 }
 
 * {
@@ -213,4 +214,16 @@ h4 {
 
 .product-not-found img{
     height: 300px;
+}
+
+/* button */
+.color-button{
+	color: var(--white-color);
+	background-color: var(--secondary-color);
+	transition: var(--trans-default);
+}
+
+.color-button:hover{	
+	color: var(--white-color);
+	background-color: var(--secondary-dark-color);
 }

@@ -40,7 +40,7 @@ productCardItemSelected.innerHTML += `
         <h3 class="card-text pt-3">${currentProduct.description}</h3>
 
         <div class="d-grid gap-2 pt-5">
-            <button class="btn btn-primary w-50 add-cart" type="button">Comprar</button>
+            <button class="btn w-50 add-cart rounded-pill color-button" type="button">Comprar</button>
         </div>
     </div> 
 `;
