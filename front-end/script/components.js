@@ -42,7 +42,7 @@ footer.innerHTML +=`
                             class="d-inline-block align-text-top">
                         itsPay
                     </a>
-                    <h4 class="py-3">Encontre tudo o que procura em um lugar só.</h4>
+                    <h4 class="py-3 w-75">Encontre tudo o que procura em um só lugar.</h4>
                 </li>
             </div>
         </div>
