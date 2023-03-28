@@ -109,6 +109,12 @@ h4 {
 	overflow: hidden;
 }
 
+/* header */
+.header-component{
+	background-color: var(--white-color);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* icons */
 .small-icon{
 	font-size: 16px;
@@ -124,13 +130,6 @@ h4 {
 }
 .badge{
 	bottom: 6px;
-}
-
-/* header */
-.header-position{
-	background-color: var(--white-color);
-	position: fixed;
-	z-index: 1;
 }
 
 /* links */

@@ -213,7 +213,7 @@ function deleteButtons() {
 
             /*
                 Atualiza o número total de produtos no carrinho e o custo total do carrinho 
-                com base na quantidade e no preço do produto removido.
+                com base na quantidade e no preço do produto removido
             */ 
             displayCart();
             onLoadCartNumbers();

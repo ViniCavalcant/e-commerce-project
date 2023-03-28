@@ -22,44 +22,17 @@
 </head>
 
 <body>
-    <header class="container-xxl container-xl py-3">
-        <div class="row">
-            <div class="col-8">
-                <ul class="nav justify-content-start align-items-center">
-                    <div class="d-flex">
-                        <li class="nav-item logo">
-                            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                                <img src="./assets/logo/itsPay.png" alt="Logo" width="48" height="48"
-                                    class="d-inline-block align-text-top">
-                                itsPay
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-                <ul class="nav">
-                    <li class="nav-item d-flex justify-content-center align-items-center">
-                        <a class="nav-link main-links" href="cart-page.html">
-                            <i class="bi bi-cart-fill large-icon"></i>
-                            <span class="badge bg-primary rounded-pill">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header class="fixed-top d-flex justify-content-center py-2 header-component"></header>
 
-    <main class="container-xxl container-xl">
-        <div class="row row-cols-1 row-cols-sm-2 card-product-selected"></div>
+    <main class="container-xxl container-xl pt-5">
+        <div class="row row-cols-1 row-cols-sm-2 card-product-selected pt-5"></div>
     </main>
 
-    <footer class="container-xxl container-xl pt-3">
-        <h1></h1>
-    </footer>
+    <footer class="container-xxl container-xl pt-5 py-5 footer-component"></footer>
 
     <!-- JavaScript -->
     <script src="../service/service.js"></script>
+    <script src="./script/components.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/product.js"></script>
     <script src="./script/cart.js"></script>
