@@ -22,33 +22,33 @@ Para te auxiliar no teste do projeto, você possui duas formas de fazer isto:
 
 O primeiro será utilizando a extensão do Visual Studio Code chamada Live Server.
 
-```
+
 Primeiro - instale a extensão no botão "install"
-![image1](https://user-images.githubusercontent.com/66746763/228141654-7bdbc859-cccb-409d-8759-9939ff800cdc.png)
+![image1](https://user-images.githubusercontent.com/66746763/228156643-bd689b7f-dc03-4132-9681-f29e9952e92c.png)
 
 Segundo - vá até o arquivo "index.html" localizado na pasta front-end
-![image2](https://user-images.githubusercontent.com/66746763/228141684-1ef114ac-e155-4668-97d7-bf919fd3339a.png)
+![image2](https://user-images.githubusercontent.com/66746763/228156762-9aaf27dc-92d1-4958-9df4-1841b6725928.png)
 
 Terceiro - clique em "Go Live" no canto inferior direito
-![image3](https://user-images.githubusercontent.com/66746763/228141704-a83685df-2cbe-4190-bbcf-e3911b394022.png)
+![image3](https://user-images.githubusercontent.com/66746763/228156799-cbd14c39-69eb-4e92-abc4-7cd3a54807ef.png)
 
 Agora é só ir até o seu navegador, que o projeto ira estar pronto para uso. 😊
-```
+
 
 Já o segundo, será mais simples.
 
-```
+
 Primeiro - vá atá a pasta do projeto em seu dispositivo
-![image4](https://user-images.githubusercontent.com/66746763/228141729-90fbf9b9-eb6d-4342-8750-6b58f3ab1d38.png)
+![image4](https://user-images.githubusercontent.com/66746763/228156823-3739b0a2-04b7-4b86-abcb-44dc7dc5cf25.png)
 
 Segundo - entre nela e clique na pasta "front-end"
-![image5](https://user-images.githubusercontent.com/66746763/228141742-a94956c9-e556-4c78-a38f-bfffc8e6448d.png)
+![image5](https://user-images.githubusercontent.com/66746763/228156856-537d9e8b-d2c0-4353-ac47-e4b8d6b16f9f.png)
 
 Terceiro - clique duas vezes no arquivo "index.html"
-![image6](https://user-images.githubusercontent.com/66746763/228141756-64a6e0f4-443c-47e3-a563-c3b086b19c02.png)
+![image6](https://user-images.githubusercontent.com/66746763/228156876-402c52d4-8c22-44bc-9989-bdec5432feeb.png)
 
 O seu navegador ira abrir no projeto pronto para uso. 😊
-```
+
 
 ## 🎁 Expressões de gratidão
 Gostaria de aproveitar este momento para agradecer pelo projeto proposto. Foi uma experiência enriquecedora que me permitiu expandir meus conhecimentos e habilidades como desenvolvedor Front-End. Agradeço pela oportunidade de participar deste desafio e espero ter a chance de contribuir com a equipe em um futuro próximo. Mais uma vez, muito obrigado. 😊
