@@ -1,18 +1,23 @@
-// função que trata o clique do botão "Comprar"
+// Função que trata o clique do botão "Comprar".
 function addToCart(product) {
-    // código para adicionar o produto ao carrinho
+    // Código para adicionar o produto ao carrinho.
     localStorage.setItem('product', JSON.stringify(product));
     cartNumbers(product);
     totalCost(product);
 }
 
+
+// Chamada quando a página é carregada para atualizar os números do carrinho.
 function onLoadCartNumbers(){
+    // Pega o número de produtos no carrinho do armazenamento local e exibe.
     let productNumbers = localStorage.getItem('cartNumbers');
+    
     if(productNumbers) {
         document.querySelector('.badge').textContent = productNumbers;
     }
 }
 
+// Atualiza o número de produtos no carrinho.
 function cartNumbers(products) {
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers);
@@ -28,6 +33,10 @@ function cartNumbers(products) {
     setItens(products);
 }
 
+/*
+    Pega os itens atuais do carrinho do armazenamento local adiciona o novo produto e armazena os itens 
+    atualizados do carrinho no armazenamento local.
+*/ 
 function setItens(product){
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
@@ -51,7 +60,12 @@ function setItens(product){
     localStorage.setItem("productsInCart", JSON.stringify (cartItems));
 }
 
+/*
+    Ele recupera o custo total atual do armazenamento local, 
+    adiciona o preço do novo produto e armazena o custo total atualizado no armazenamento local.
+*/
 function totalCost(product){
+    // Pega o custo total atual do armazenamento local.
     let cartCost = localStorage.getItem('totalCost');
     
     if(cartCost != null){
@@ -62,6 +76,10 @@ function totalCost(product){
     }
 }
 
+/*
+    recupera os itens do carrinho e o custo total do armazenamento local e gera o código HTML 
+    para exibir os itens do carrinho e o custo total.
+*/
 function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
@@ -69,7 +87,6 @@ function displayCart(){
     let cartCost = localStorage.getItem('totalCost');
     
     if(cartItems && productContainer){
-
         if (cartCost == 0) {
             productContainer.innerHTML = `
                 <div class="d-grid align-items-center justify-content-center pt-5">
@@ -167,21 +184,26 @@ function displayCart(){
         
 }
 
+/*
+    a função remove esse produto do carrinho e atualiza o número de produtos no carrinho e o custo total 
+    no armazenamento local do navegador.
+*/
 function deleteButtons() {
     let deleteButtons = document.querySelectorAll('.trash-click');
     let productName;
     let productNumbers = localStorage.getItem('cartNumbers');
     let cartItems = localStorage.getItem('productsInCart');
     let cartCost = localStorage.getItem('totalCost');
-    
     cartItems = JSON.parse(cartItems);
 
     for(let i=0; i < deleteButtons.length; i++) {
+        //  Evento "click" que remove o produto do carrinho e atualiza as informações no armazenamento local.
         deleteButtons[i].addEventListener('click', () => {
             productName = deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
             localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
             localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
 
+            // Remove o produto da lista de itens no carrinho e atualiza as informações de carrinho no armazenamento local.
             delete cartItems[productName];
             localStorage.setItem('productsInCart', JSON.stringify(cartItems));
             if (Object.keys(cartItems).length === 0) {
@@ -189,38 +211,20 @@ function deleteButtons() {
                 cartCost = 0;
             }
 
+            /*
+                Atualiza o número total de produtos no carrinho e o custo total do carrinho 
+                com base na quantidade e no preço do produto removido.
+            */ 
             displayCart();
             onLoadCartNumbers();
         });
     }
 }
 
+/*
+    "onLoadCartNumbers()" é chamada para atualizar o número de itens no carrinho do ícone de carrinho na barra de navegação. 
+    "displayCart()" é chamada para atualizar a exibição do carrinho de compras na página, 
+    exibindo a lista atualizada de itens no carrinho e o custo total.
+*/ 
 onLoadCartNumbers();
 displayCart();
-
-
-
-
-
-
-
-
-
-
-
-
-// Stepper (contador de produtos)
-const myInput = document.getElementById("my-input");
-function stepper(btn){
-    let id = btn.getAttribute("id");
-    let min = myInput.getAttribute("min");
-    let max = myInput.getAttribute("max");
-    let step = myInput.getAttribute("step");
-    let val = myInput.getAttribute("value");
-    let calcStep = (id == "increment") ? (step*1) : (step * -1);
-    let newValue = parseInt(val) + calcStep;
-
-    if(newValue >= min && newValue <= max){
-        myInput.setAttribute("value", newValue);
-    }
-}

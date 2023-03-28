@@ -1,4 +1,6 @@
-
+/*
+    O código armazena o produto selecionado na variável "currentProduct" após a conversão do JSON armazenado no localStorage
+*/ 
 let currentProduct = JSON.parse(localStorage.getItem('currentProduct'));
 let productCardItemSelected = document.querySelector('.card-product-selected');
 
@@ -37,24 +39,15 @@ productCardItemSelected.innerHTML += `
         <h1 class="card-text pt-1">Por <span class="card-price">R$ ${currentProduct.price}</span></h1>
         <h3 class="card-text pt-3">${currentProduct.description}</h3>
 
-        <div class="pt-4">
-            <h3>Quantidade</h3>
-            <div class="stepper-input">
-                <button id="decrement" class="decrement" onclick="stepper(this)">-</button>
-                <input type="number" class="stepper-number" min="0" max="100" step="1" value="1" id="my-input" readonly>
-                <button id="increment" class="increment" onclick="stepper(this)">+</button>
-            </div>
-        </div>
-
         <div class="d-grid gap-2 pt-5">
             <button class="btn btn-primary w-50 add-cart" type="button">Comprar</button>
         </div>
     </div> 
 `;
 
-// adicionar ouvinte de evento de clique para o botão "Comprar"
+// Adiciona um ouvinte de evento de clique para o botão de adicionar ao carrinho
 let addToCartBtn = document.querySelector('.add-cart');
+
 addToCartBtn.addEventListener('click', () => {
-  // chamar a função que trata o clique do botão e passar o objeto currentProduct como parâmetro
   addToCart(currentProduct);
 });
