@@ -7,6 +7,7 @@ Projeto realizado com o objetivo de buscar uma oportunidade como Desenvolvedor F
 A tarefa incluiu a utilização da FakeStoreAPI, no qual desenvolvi um service para separar o "Back-End" do "Front-End". Essa abordagem permite que o Front-End consuma qualquer API ou chamada do Back-End sem precisar alterar o código. Além disso, para armazenar as informações do carrinho, utilizei o "localStorage".
 
 O protótipo desenvolvido no Figma foi essencial para validar a usabilidade do projeto e que de forma eficiente garantisse um fluxo para as páginas na criação do design final.
+https://www.figma.com/file/2qJmn69rKP36LzPNIXMGDW/E-commerce?node-id=0%3A1&t=inV6pBJCdXTVGxvR-1
 
 Para tornar o projeto dinâmico e melhorar a performance, componentizei-o. Essa abordagem permite reutilizar os componentes em diferentes partes do projeto e torna a manutenção mais fácil.
 
