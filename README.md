@@ -1,24 +1,3 @@
-Sempre sonhei em realizar os meus sonhos atráves da técnologia, viajar o mundo, viver novas experiencias e principalmente ajudar os meus pais e as pessoas oa meu redor. Mudar o mundo através junto a técnologia. Me esforçei muito para conseguir uma oportunidade de mostrar a minha dedicação e espero que está sejá ela :)
-
-
-
-Hello
-
-I am vinicus
-
-I'm a front end developer
-
-with experience in angular, typescript and ui/ux
-
-I've been a lover of programming since I was a younger, and today I try to make my dreams come true through technology.
-
-I want to improve my life and the lives of the people I love through programming.
-
-At the moment I seek to become an excellent professional and have a solid career. So I believe that here, I would have the perfect support for this
-
-thank you
-
-
 <img src="https://user-images.githubusercontent.com/66746763/228128204-90c0e67c-44f8-4aee-8dfe-bdf16604e667.png" width="120">
 
 # itsPay E-commerce
