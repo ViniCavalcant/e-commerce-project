@@ -3,6 +3,8 @@
 */
 let header = document.querySelector('.header-component');
 let footer = document.querySelector('.footer-component');
+let notFound = document.querySelector(".product-container")
+
 
 header.innerHTML += `
     <div class="row container-xxl container-xl">
@@ -82,4 +84,16 @@ footer.innerHTML +=`
             </ul>
         </div>
     </div>
+`;
+
+notFound.innerHTML = `
+<div class="d-grid align-items-center justify-content-center pt-5">
+    <h1 class="card-title d-flex justify-content-center">O seu carrinho está vazio</h1>
+    <div class="d-flex justify-content-center not-found pt-3">
+        <img src="./assets/not-found/emptycart.png" alt="">
+    </div>
+    <div class="d-grid gap-2 pt-4">
+        <a href="./index.html" class="btn btn-primary" type="button">Ir as compras</a>
+    </div>
+</div>
 `;
